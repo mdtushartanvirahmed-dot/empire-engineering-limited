@@ -54,14 +54,8 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
-  return (
-    <html lang="bn">
-      <body>{children}</body>
-    </html>
-  )
+import { CompanySite } from "../components/company-site"
+
+export default function Page() {
+  return <CompanySite />
 }
